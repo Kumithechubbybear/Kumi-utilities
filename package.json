@@ -1,0 +1,12 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "https://github.com/Kumi-the-chubby-bear/bot.git",
+  "author": "ronnapatp <ronnapatp@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0"
+  }
+}
