@@ -11,6 +11,7 @@ const ban = require('./command/ban')
 const warn = require('./command/warn')
 const faq = require('./command/fap')
 const badword = require('./command/badword')
+const joke = require('./command/joke')
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -23,6 +24,7 @@ client.on('ready', () => {
   warn(client)
   faq(client)
   badword(client)
+  joke(client)
 });
 
 client.login();
