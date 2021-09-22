@@ -8,7 +8,8 @@ const mute = require('./command/mute')
 const unmute = require('./command/unmute')
 const kick = require('./command/kick')
 const ban = require('./command/ban')
-
+const warn = require('./command/warn')
+const faq = require('./command/fap')
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -18,6 +19,8 @@ client.on('ready', () => {
   unmute(client)
   kick(client)
   ban(client)
+  warn(client)
+  faq(client)
 });
 
 client.login();
