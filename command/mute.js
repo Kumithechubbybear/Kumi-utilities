@@ -11,6 +11,7 @@ module.exports = (client) => {
         console.log(message.author.username,' use mute command');
         const tag = `<@${targetMember.id}>`
         message.reply(`${tag} has been muted,`)
+        message.delete();
         let verifyRole = message.guild.roles.cache.find(
           role => role.name === 'verify'
       );

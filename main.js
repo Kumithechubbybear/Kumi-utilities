@@ -18,7 +18,7 @@ const web = require('./command/website')
 const rules = require('./command/rules');
 const main = require('./command/main')
 const help = require('./command/help')
-
+const mod = require('./command/mod')
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -58,6 +58,7 @@ client.on('ready', () => {
   rules(client)
   main(client)
   help(client)
+  mod(client)
 });
 
 client.login(process.env.DISCORD_TOKEN);

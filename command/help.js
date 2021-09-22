@@ -9,12 +9,15 @@ const info = new MessageEmbed()
 		{ name: '`>faq`', value: 'Show **FAQ**', inline: true },
 		{ name: '`>website`', value: 'Show website update channel', inline: true },
 	)
-const noname = new MessageEmbed()
-    .setDescription(`Help command is in your dm | <@!890191209954443264>`)
 
 module.exports = (client) => {
     client.on('message', (message) => {
         if (message.content.startsWith( prefix + 'help')) {
+            const taggy = `<@${message.author.id}>`
+            const noname = new MessageEmbed()
+                .setDescription(`${taggy} Help command is in your dm | <@!890191209954443264>`)
+
+            message.delete();
             message.author.send({ embeds: [info] });
             message.channel.send({ embeds: [noname] });
         }          

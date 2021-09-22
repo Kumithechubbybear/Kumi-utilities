@@ -10,7 +10,10 @@ module.exports = (client) => {
         const targetMember = message.guild.members.cache.get(target.id)
         console.log(message.author.username,' useun  mute command');
         const tag = `<@${targetMember.id}>`
+        message.delete();
+
         message.reply(`${tag} has been un muted,`)
+
         let verifyRole = message.guild.roles.cache.find(
           role => role.name === 'Muted'
       );

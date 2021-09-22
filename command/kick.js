@@ -14,6 +14,7 @@ module.exports = (client) => {
         const targetMember = message.guild.members.cache.get(target.id)
         const tag = `<@${targetMember.id}>`
         targetMember.kick()
+        message.delete();
         message.reply(`${tag} has kicked, BYE!`)
       } else {
         message.reply(`Please tag someone to kick.`)

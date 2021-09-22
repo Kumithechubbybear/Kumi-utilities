@@ -16,7 +16,7 @@ module.exports = (client) => {
         const warnEmbed = new MessageEmbed()
         .setDescription(`${tag} has been **warned** | Warn by ${taggy}`)
  
-    
+        message.delete();
         message.channel.send({ embeds: [warnEmbed] });
       } else {
         const warnWarn = new MessageEmbed()

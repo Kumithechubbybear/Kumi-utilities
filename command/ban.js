@@ -13,6 +13,7 @@ module.exports = (client) => {
       if (target) {
         const targetMember = message.guild.members.cache.get(target.id)
         const tag = `<@${targetMember.id}>`
+        message.delete();
         targetMember.ban()
         message.reply(`${tag} has baned, BYE!`)
       } else {
