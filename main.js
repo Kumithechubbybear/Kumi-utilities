@@ -10,6 +10,7 @@ const kick = require('./command/kick')
 const ban = require('./command/ban')
 const warn = require('./command/warn')
 const faq = require('./command/fap')
+const badword = require('./command/badword')
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -21,6 +22,7 @@ client.on('ready', () => {
   ban(client)
   warn(client)
   faq(client)
+  badword(client)
 });
 
 client.login();
