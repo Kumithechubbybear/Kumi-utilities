@@ -15,16 +15,7 @@ const joke = require('./command/joke')
 const info = require('./command/info')
 const bot = require('./command/bot')
 const web = require('./command/website')
-
-
-
-let activities = [
-  `Autocode`,
-  `with R3al Drout`,
-  `Hello there!`,
-  `This is my super cool fourth activity!`,
-]
-
+const rules = require('./command/rules');
 
 
 client.on('ready', () => {
@@ -62,6 +53,7 @@ client.on('ready', () => {
   info(client)
   bot(client)
   web(client)
+  rules(client)
 });
 
 client.login();
