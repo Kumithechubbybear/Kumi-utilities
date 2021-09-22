@@ -10,6 +10,7 @@ module.exports = (client) => {
     client.on('message', (message) => {
         if (message.content.startsWith('<@!890191209954443264>')) {
             message.reply({ embeds: [info] });
+            message.react('🔥');
         }          
     })
 
