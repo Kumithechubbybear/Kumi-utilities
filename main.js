@@ -5,6 +5,8 @@ const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES" ,"GUILD
 
 const prefix = process.env.PREFIX;
 const mute = require('./command/mute')
+const unmute = require('./command/unmute')
+const kick = require('./command/kick')
 
 
 client.on('ready', () => {
@@ -12,6 +14,8 @@ client.on('ready', () => {
   client.user.setPresence({ activities: [{ name: 'activity' }], status: 'online' });
   client.user.setActivity('Kumi guys', { type: 'WATCHING' });
   mute(client)
+  unmute(client)
+  kick(client)
 });
 
 client.login();
