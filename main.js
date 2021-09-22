@@ -12,6 +12,9 @@ const warn = require('./command/warn')
 const faq = require('./command/fap')
 const badword = require('./command/badword')
 const joke = require('./command/joke')
+const info = require('./command/info')
+const bot = require('./command/bot')
+const web = require('./command/website')
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -25,6 +28,9 @@ client.on('ready', () => {
   faq(client)
   badword(client)
   joke(client)
+  info(client)
+  bot(client)
+  web(client)
 });
 
 client.login();
