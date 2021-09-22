@@ -16,10 +16,41 @@ const info = require('./command/info')
 const bot = require('./command/bot')
 const web = require('./command/website')
 
+
+
+let activities = [
+  `Autocode`,
+  `with R3al Drout`,
+  `Hello there!`,
+  `This is my super cool fourth activity!`,
+]
+
+
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
   client.user.setPresence({ activities: [{ name: 'activity' }], status: 'online' });
-  client.user.setActivity('Kumi guys', { type: 'WATCHING' });
+  const statusArray = [
+    'Kumi guys, WATCHING',
+    'movie on netflix, WATCHING',
+    'Kumi website, PLAYING',
+    'kumi history, WATCHING',
+    'random podcast, LISTENING',
+    ' morning news, LISTENING',
+    'Moderator working, WATCHING',
+    ' american football with my best friend, PLAYING',
+    'random music in spotify, LISTENING',
+    '🗺️emoji war💂, PLAYING', 
+  ];
+
+    setInterval(() => {
+      client.user.setStatus('online');
+      const random = statusArray[Math.floor(Math.random() * statusArray.length)].split(', ')
+      const status = random[0];
+      const mode = random[1];
+      client.user.setActivity(status, { type: mode })
+
+    }, 3000)
   mute(client)
   unmute(client)
   kick(client)
