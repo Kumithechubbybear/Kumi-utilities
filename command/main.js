@@ -3,12 +3,12 @@ require('dotenv').config();
 const prefix = process.env.PREFIX;
 
 const info = new MessageEmbed()
-	.setDescription('📰 You can read rules in <#884401760435834890>')
+	.setDescription('Hi ,my prefix is `>` start to use bot with `>help`')
 
 
 module.exports = (client) => {
     client.on('message', (message) => {
-        if (message.content.startsWith( prefix + 'rules')) {
+        if (message.content.startsWith('<@!890191209954443264>')) {
             message.reply({ embeds: [info] });
         }          
     })
