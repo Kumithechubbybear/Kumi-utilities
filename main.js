@@ -7,6 +7,7 @@ const prefix = process.env.PREFIX;
 const mute = require('./command/mute')
 const unmute = require('./command/unmute')
 const kick = require('./command/kick')
+const ban = require('./command/ban')
 
 
 client.on('ready', () => {
@@ -16,6 +17,7 @@ client.on('ready', () => {
   mute(client)
   unmute(client)
   kick(client)
+  ban(client)
 });
 
 client.login();
