@@ -16,6 +16,7 @@ const info = require('./command/info')
 const bot = require('./command/bot')
 const web = require('./command/website')
 const rules = require('./command/rules');
+const main = require('./command/main')
 
 
 client.on('ready', () => {
@@ -54,6 +55,7 @@ client.on('ready', () => {
   bot(client)
   web(client)
   rules(client)
+  main(client)
 });
 
 client.login();
