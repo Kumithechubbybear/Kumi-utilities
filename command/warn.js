@@ -12,9 +12,9 @@ module.exports = (client) => {
       if (target) {
         const targetMember = message.guild.members.cache.get(target.id)
         const tag = `<@${targetMember.id}>`
+        const taggy = `<@${message.author.id}>`
         const warnEmbed = new MessageEmbed()
-        .setTitle('Warn command')
-        .setDescription(`${tag} you have been warn! Make sure you read all the rules.`)
+        .setDescription(`${tag} has been **warned** | Warn by ${taggy}`)
     
         message.channel.send({ embeds: [warnEmbed] });
       } else {

@@ -5,8 +5,7 @@ module.exports = (client) => {
       const { MessageEmbed } = require('discord.js');
       const tag = `<@${message.author.id}>`
       const reply = new MessageEmbed()
-          .setTitle(`${message.author.username} Just use badword`)
-          .setDescription(`${tag} Make sure you read the rules`)
+          .setDescription(`${tag} has been warned because use BADWORD `)
    
           
       if (
