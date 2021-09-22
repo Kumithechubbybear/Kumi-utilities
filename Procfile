@@ -1,2 +1,2 @@
-worker: node main.js
+worker: node .
 reminder: javascript main.js
