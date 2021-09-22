@@ -13,9 +13,6 @@ module.exports = (client) => {
         msg.includes('ควย') ||
         msg.includes('เหี้ย') ||
         msg.includes('สัส') ||
-        msg.includes('หน้าหี') ||
-        msg.includes('ไอสัส') ||
-        msg.includes('ไอเหี้ย') ||
         msg.includes('เสือก') ||
         msg.includes('fucker') ||
         msg.includes('fuck') ||
@@ -23,8 +20,7 @@ module.exports = (client) => {
         msg.includes('dick') ||
         msg.includes('pussy') ||
         msg.includes('shit') ||
-        msg.includes('vagina') ||
-        msg.includes('HEE')
+        msg.includes('vagina') 
     
       ) {
 
