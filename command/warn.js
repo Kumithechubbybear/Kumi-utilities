@@ -15,15 +15,18 @@ module.exports = (client) => {
         const taggy = `<@${message.author.id}>`
         const warnEmbed = new MessageEmbed()
         .setDescription(`${tag} has been **warned** | Warn by ${taggy}`)
+ 
     
         message.channel.send({ embeds: [warnEmbed] });
       } else {
-        message.reply(`Please tag someone to ban.`)
+        const warnWarn = new MessageEmbed()
+        .setDescription(`Pleaseg tag someone to warn`)
+        message.reply({ embeds: [warnWarn] });
       }
     } else {
         message.delete();
       message.author.send(
-        `You do not have any permission to use ban command in kumi server.`
+        `You do not have any permission to use warn command in kumi server.`
       )
     }
   })
