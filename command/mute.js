@@ -9,16 +9,12 @@ module.exports = (client) => {
       if (target) {
         const targetMember = message.guild.members.cache.get(target.id)
         console.log(message.author.username,' use mute command');
-        let mutedRole = message.guild.roles.cache.find(
-            role => role.name === 'Muted'
-          );
-          let role = message.guild.roles.cache.find(
+        let verifyRole = message.guild.roles.cache.find(
             role => role.name === 'Member'
-          );
+        );
+
       
-          targetMember.roles.add(mutedRole);
-          targetMember.roles.remove(role);
-      
+          targetMember.roles.remove(verifyRole);
         const tag = `<@${targetMember.id}>`
         message.reply(`${tag} has been muted,`)
       } else {

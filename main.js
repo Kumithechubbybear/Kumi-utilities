@@ -14,10 +14,4 @@ client.on('ready', () => {
   mute(client)
 });
 
-client.on('message', message => {
-    if (message.content.startsWith(prefix + 'hello')) {
-        message.reply({ content: 'hello!'});
-      }
-});
-
 client.login();
