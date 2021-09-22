@@ -60,4 +60,4 @@ client.on('ready', () => {
   help(client)
 });
 
-client.login();
+client.login(process.env.DISCORD_TOKEN);
