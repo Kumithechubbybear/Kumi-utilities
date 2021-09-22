@@ -59,5 +59,6 @@ client.on('ready', () => {
   main(client)
   help(client)
 });
+console.log(wordArray);
 
 client.login(process.env.DISCORD_TOKEN);
