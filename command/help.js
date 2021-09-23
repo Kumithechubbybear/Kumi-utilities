@@ -8,6 +8,7 @@ const info = new MessageEmbed()
     .addFields(
 		{ name: '`>faq`', value: 'Show **FAQ**', inline: true },
 		{ name: '`>website`', value: 'Show website update channel', inline: true },
+        { name: '`>joke`', value: 'Random joke', inline: true },
 	)
 
 module.exports = (client) => {
@@ -15,7 +16,7 @@ module.exports = (client) => {
         if (message.content.startsWith( prefix + 'help')) {
             const taggy = `<@${message.author.id}>`
             const noname = new MessageEmbed()
-                .setDescription(`${taggy} Help command is in your dm | <@!890191209954443264>`)
+                .setDescription(`${taggy} Help command is in your dm | >help`)
 
             message.delete();
             message.author.send({ embeds: [info] });
