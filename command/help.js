@@ -1,6 +1,7 @@
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, Permissions } = require('discord.js');
 require('dotenv').config();
 const prefix = process.env.PREFIX;
+const command = require('./command') 
 
 const info = new MessageEmbed()
     .setTitle(`Kumi's Utilities help`)
@@ -23,5 +24,8 @@ module.exports = (client) => {
             message.channel.send({ embeds: [noname] });
         }          
     })
+
+    
+         
 
 }
