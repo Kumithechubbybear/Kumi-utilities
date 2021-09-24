@@ -35,6 +35,8 @@ client.on('ready', () => {
     ' american football with my best friend, PLAYING',
     'random music in spotify, LISTENING',
     '🗺️emoji war💂, PLAYING', 
+    'kumi podcast, LISTENING',
+    'Hide and seek, PLAYING',
   ];
 
     setInterval(() => {
