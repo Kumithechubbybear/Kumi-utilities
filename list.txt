@@ -1,0 +1,13 @@
+kick command ✔️
+ban command ✔️
+mute command ✔️
+unmute command ✔️
+warn command ✔️
+joke command ✔️
+badword detect ✔️
+faq command ✔️
+help command ✔️
+rules command ✔️
+website command ✔️
+auto send message
+political word detect 
