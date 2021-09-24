@@ -1,8 +1,10 @@
 const command = require('./command') 
-const { Permissions } = require('discord.js');
+const { Permissions , MessageEmbed } = require('discord.js');
 module.exports = (client) => {
   command(client, 'mute', (message) => {
     const { member, mentions } = message
+    const one = new MessageEmbed()
+    .setDescription(`Please someone to mute`)
 
     if (member.permissions.has(Permissions.FLAGS.KICK_MEMBERS)){
       const target = mentions.users.first()
@@ -10,7 +12,9 @@ module.exports = (client) => {
         const targetMember = message.guild.members.cache.get(target.id)
         console.log(message.author.username,' use mute command');
         const tag = `<@${targetMember.id}>`
-        message.reply(`${tag} has been muted,`)
+        const two = new MessageEmbed()
+        .setDescription(`${tag} has been muted`)
+        message.reply({ embeds: [two]})
         message.delete();
         let verifyRole = message.guild.roles.cache.find(
           role => role.name === 'verify'
@@ -23,7 +27,7 @@ module.exports = (client) => {
         targetMember.roles.remove(verifyRole);
         targetMember.roles.add(muteRole);
       } else {
-        message.reply(`Please tag someone to muted.`)
+        message.reply({ embeds: [one] });
       }
     } else {
         message.delete();
