@@ -11,3 +11,6 @@ rules command ✔️
 website command ✔️
 auto send message
 political word detect 
+reaction roles
+add mod logs
+ping member when join server
