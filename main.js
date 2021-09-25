@@ -38,6 +38,9 @@ client.on('ready', () => {
     '🗺️emoji war💂, PLAYING', 
     'kumi podcast, LISTENING',
     'Hide and seek, PLAYING',
+    'giveaways, WATCHING',
+    'Kumi butter balm, PLAYING',
+    'everyone online, WATCHING',
   ];
 
     setInterval(() => {
