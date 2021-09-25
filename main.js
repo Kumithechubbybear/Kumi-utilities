@@ -20,6 +20,7 @@ const main = require('./command/main')
 const help = require('./command/help')
 const mod = require('./command/mod')
 const helpm = require('./command/modhelp')
+const poli = require('./command/political')
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -63,6 +64,7 @@ client.on('ready', () => {
   help(client)
   mod(client)
   helpm(client)
+  poli(client)
 });
 
 client.login(process.env.DISCORD_TOKEN);
