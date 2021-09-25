@@ -41,6 +41,7 @@ client.on('ready', () => {
     'giveaways, WATCHING',
     'Kumi butter balm, PLAYING',
     'everyone online, WATCHING',
+    'Simon says not simoon says, PLAYING',
   ];
 
     setInterval(() => {
