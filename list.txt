@@ -10,7 +10,8 @@ help command ✔️
 rules command ✔️
 website command ✔️
 auto send message
-political word detect 
+political word detect ✔️ 
 reaction roles
 add mod logs
 ping member when join server
+ticket system
