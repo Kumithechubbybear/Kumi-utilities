@@ -43,6 +43,9 @@ client.on('ready', () => {
     'Kumi butter balm, PLAYING',
     'everyone online, WATCHING',
     'Simon says not simoon says, PLAYING',
+    'GTA V, PLAYING',
+    'NETFLIX, WATCHING',
+    'Freefire, PLAYING',
   ];
 
     setInterval(() => {
