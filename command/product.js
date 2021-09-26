@@ -16,7 +16,9 @@ const price = new MessageEmbed()
 
 
 const product = new MessageEmbed()
-	.setDescription('Click [here](https://github.com/kumi-the-chubby-bear/) to show kumi github')
+    .setColor('#E74C3C')
+    .setTitle('Product List')
+    .setDescription('1.คุมิไรซ์บัตเตอร์บาล์ม 2.สติ๊กเกอร์กันยุงคุมิ 3.คุมิมอซซี่สเปรย์')
 
 
 
@@ -39,8 +41,10 @@ module.exports = (client) => {
 
             const genproduct = new MessageEmbed()
             .setDescription(`<@${message.author.id}> Kumi product list is in our DM | >kumiproduct`)        
-            message.channel.send({ embeds: [product] });
-            message.author.send({ embeds: [genproduct] });
+            message.author.send({ embeds: [product] });
+            message.channel.send({ embeds: [genproduct] });
+            message.react('🛍️');
+
         }          
     })
 }
