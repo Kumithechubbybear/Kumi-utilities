@@ -46,6 +46,8 @@ client.on('ready', () => {
     'GTA V, PLAYING',
     'NETFLIX, WATCHING',
     'Freefire, PLAYING',
+    'Roblox, PLAYING',
+    'Monkeytype.com, PLAYING',
   ];
 
     setInterval(() => {
