@@ -19,13 +19,13 @@ const faq1 = new MessageEmbed()
 
 module.exports = (client) => {
     client.on('message', (message) => {
-        if (message.content.startsWith( prefix + 'faq')) {
+        if (message.content ===( prefix + 'faq')) {
             message.reply({ embeds: [faq] });
         }          
     })
 
     client.on('message', (message) => {
-        if (message.content.startsWith( prefix + 'faq1')) {
+        if (message.content ===( prefix + 'faq1')) {
             message.reply({ embeds: [faq1] });
         }          
     })

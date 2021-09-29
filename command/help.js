@@ -14,7 +14,7 @@ const info = new MessageEmbed()
 
 module.exports = (client) => {
     client.on('message', (message) => {
-        if (message.content.startsWith( prefix + 'help')) {
+        if (message.content ===( prefix + 'help')) {
             const taggy = `<@${message.author.id}>`
             const noname = new MessageEmbed()
                 .setDescription(`${taggy} Help command is in your dm | >help`)

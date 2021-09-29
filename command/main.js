@@ -12,13 +12,13 @@ const infoo = new MessageEmbed()
 
 module.exports = (client) => {
     client.on('message', (message) => {
-        if (message.content.startsWith('<@!890191209954443264>')) {
+        if (message.content ===('<@!890191209954443264>')) {
             message.reply({ embeds: [info] });
             message.react('🔥');
         }          
     })
     client.on('message', (message) => {
-        if (message.content.startsWith(prefix + 'github')) {
+        if (message.content ===(prefix + 'github')) {
             const infooo = new MessageEmbed()
 	.setDescription(`<@${message.author.id}> kumi github link was send to you in DM | >github `)
     message.delete()

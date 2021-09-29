@@ -8,7 +8,7 @@ const info = new MessageEmbed()
 
 module.exports = (client) => {
     client.on('message', (message) => {
-        if (message.content.startsWith( prefix + 'bot')) {
+        if (message.content ===( prefix + 'bot')) {
             message.reply({ embeds: [info] });
         }          
     })

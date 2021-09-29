@@ -8,7 +8,7 @@ const info = new MessageEmbed()
 
 module.exports = (client) => {
     client.on('message', (message) => {
-        if (message.content.startsWith( prefix + 'mod')) {
+        if (message.content ===( prefix + 'mod')) {
             message.delete();
             message.author.send({ embeds: [info] });
         }          

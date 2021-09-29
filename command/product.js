@@ -24,7 +24,7 @@ const product = new MessageEmbed()
 
 module.exports = (client) => {
     client.on('message', (message) => {
-        if (message.content.startsWith( prefix + 'kumiprice')) {
+        if (message.content ===( prefix + 'kumiprice')) {
 
 
             const genprice = new MessageEmbed()
@@ -36,7 +36,7 @@ module.exports = (client) => {
         }          
     })
     client.on('message', (message) => {
-        if (message.content.startsWith(prefix + 'kumiproduct')) {
+        if (message.content ===(prefix + 'kumiproduct')) {
 
 
             const genproduct = new MessageEmbed()

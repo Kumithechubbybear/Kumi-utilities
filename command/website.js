@@ -10,12 +10,12 @@ const infoo = new MessageEmbed()
 
 module.exports = (client) => {
     client.on('message', (message) => {
-        if (message.content.startsWith( prefix + 'website')) {
+        if (message.content ===( prefix + 'website')) {
             message.reply({ embeds: [info] });
         }          
     })
     client.on('message', (message) => {
-        if (message.content.startsWith( prefix + 'kumiweb')) {
+        if (message.content ===( prefix + 'kumiweb')) {
             message.reply({ embeds: [infoo] });
             message.author.send('https://kumithechubbybear.netlify.app/')
         }          
