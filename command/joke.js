@@ -1,6 +1,11 @@
 module.exports = (client) => {
 require('dotenv').config();
 const prefix = process.env.PREFIX;
+const { MessageEmbed } = require('discord.js');
+
+const addjoke = new MessageEmbed()
+	.setDescription('You can add joke at [github](https://github.com/Kumithechubbybear/Kumi-utlities/blob/main/command/joke.js)')
+
 var jokes = [
     { joke: 'Why did the scarecrow win an award? Because he was outstanding in his field.' },
     { joke: 'Why did the melon jump into the lake? It wanted to be a water-melon.' },
@@ -34,11 +39,17 @@ function formatJoke(joke) {
   
   //Function knock() returns the formatted joke
   client.on('message', (message) => {
-    if (message.content.includes(prefix + 'joke')) {
+    if (message.content ===(prefix + 'joke')) {
         const msg = message.content.split(' ');
   
             message.reply(knock());
        
+    }
+  });
+
+  client.on('message', (message) => {
+    if (message.content === (prefix + 'addjoke')) {
+      message.reply({ embeds: [addjoke] });
     }
   });
 }
