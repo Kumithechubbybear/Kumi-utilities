@@ -29,7 +29,6 @@ var jokes = [
 function formatJoke(joke) {
     return [
         joke.joke,
-        `Add more joke go to github.`
     ].join('\n')
   }
   
