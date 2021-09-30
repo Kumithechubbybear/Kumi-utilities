@@ -1,43 +1,43 @@
 {
-    "content": null,
-    "embeds": [
-      {
-        "title": "Kumi the chubby bear",
-        "description": "**Hi and welcome to Kumi discord sever!**\nHere you can talk about Kumi products or Kumi website or other topics by following the channel name",
-        "color": 15745400,
-        "thumbnail": {
-          "url": "https://kumithechubbybear.netlify.app/public/image/kumiprofile.jpg"
-        }
-      },
-      {
-        "title": "Rules",
-        "description": "**1. Do not organize, participate in, or encourage harassment of others.** Disagreements happen and are normal, but continuous, repetitive, or severe negative comments may cross the line into harassment and are not okay.\n**2. Do not organize, promote, or coordinate servers around hate speech.** It’s unacceptable to attack a person or a community based on attributes such as their race, ethnicity, national origin, sex, gender, sexual orientation, religious affiliation, or disabilities.\n**3. Do not make threats of violence or threaten to harm others.** This includes indirect threats, as well as sharing or threatening to share someone’s private personal information (also known as doxxing).\n**4. Do not send others viruses or malware**, attempt to phish others, or hack or DDoS them.\n**5. Do not send NSFW content in server** or you get ban from the moderator.\n**6. You may not sexualize minors in any way.** This includes sharing content or links which depict minors in a pornographic, sexually suggestive, or violent manner, and includes illustrated or digitally altered pornography that depicts minors (such as lolicon, shotacon, or cub). We report illegal content to the [National Center for Missing and Exploited Children.](https://www.missingkids.org/gethelpnow/cybertipline)",
-        "color": 15759681
-      },
-      {
-        "title": "Donate us",
-        "description": "You can donate on [ko-fi](https://ko-fi.com/bhira) 💳",
-        "color": 6390554
-      },
-      {
-        "title": "Server",
-        "description": "Here is the server information ℹ\n\n<#884402109821374514> - Announcement about server or Kumi\n<#887238654781694002> - Announcement Kumi promotion\n<#884402410947231755> - List of staff you can contact\n<#888301958501388288> - Get ping role\n<#890078089072242689> - FQA for Kumi and server\n<#884446016370270269> - General talking\n<#884615331912499252> - Off topic talking\n<#884615400149643326> - Other languages that not THAI or ENG🔤",
-        "color": 15745400
-      },
-      {
-        "title": "Website",
-        "description": "You can see by the following channel\n\n<#884435292541575248> - Update about website\n<#884434539924041769> - Report bug about website\n<#884434613072711750> - Suggest idea in website\n<#888054540623048725> - Development of Kumi web\n<#887327669451120681> - Update from github",
-        "color": 4312560
-      },
-      {
-        "title": "Product",
-        "description": "Information about product category\n\n<#887238307761770527> - Show Kumi product\n<#887238341035175956> - How to buy?\n<#887243007710068737> - Talk about product  feedback or other",
-        "color": 15745400
-      },
-      {
-        "title": "Verify",
-        "description": "Go to <#884402231007408128> to verify first to get permission to talk",
-        "color": 15745345
+  "content": null,
+  "embeds": [
+    {
+      "title": "Kumi the chubby bear",
+      "description": "**Hi and welcome to Kumi discord sever!**\nHere you can talk about Kumi products or Kumi website or other topics by following the channel name",
+      "color": 15745400,
+      "thumbnail": {
+        "url": "https://kumithechubbybear.netlify.app/public/image/kumiprofile.jpg"
       }
-    ]
-  }
+    },
+    {
+      "title": "Rules",
+      "description": "**1. Do not organize, participate in, or encourage harassment of others.** Disagreements happen and are normal, but continuous, repetitive, or severe negative comments may cross the line into harassment and are not okay.\n**2. Do not organize, promote, or coordinate servers around hate speech.** It’s unacceptable to attack a person or a community based on attributes such as their race, ethnicity, national origin, sex, gender, sexual orientation, religious affiliation, or disabilities.\n**3. Do not make threats of violence or threaten to harm others.** This includes indirect threats, as well as sharing or threatening to share someone’s private personal information (also known as doxxing).\n**4. Do not send others viruses or malware**, attempt to phish others, or hack or DDoS them.\n**5. Do not send NSFW content in server** or you get ban from the moderator.\n**6. You may not sexualize minors in any way.** This includes sharing content or links which depict minors in a pornographic, sexually suggestive, or violent manner, and includes illustrated or digitally altered pornography that depicts minors (such as lolicon, shotacon, or cub). We report illegal content to the [National Center for Missing and Exploited Children.](https://www.missingkids.org/gethelpnow/cybertipline)",
+      "color": 15759681
+    },
+    {
+      "title": "Donate us",
+      "description": "You can donate on [ko-fi](https://ko-fi.com/bhira) 💳",
+      "color": 6390554
+    },
+    {
+      "title": "Server",
+      "description": "Here is the server information ℹ\n\n<#884402109821374514> - Announcement about server or Kumi\n<#887238654781694002> - Announcement Kumi promotion\n<#884402410947231755> - List of mod you can contact\n<#888301958501388288> - Get ping role\n<#890078089072242689> - FQA for Kumi and server\n<#884446016370270269> - General talking\n<#884615331912499252> - Off topic talking\n<#884615400149643326> - Other languages that not THAI or ENG🔤",
+      "color": 15745400
+    },
+    {
+      "title": "Website",
+      "description": "You can see by the following channel\n\n<#884435292541575248> - Update about website\n<#884434539924041769> - Report bug about website\n<#884434613072711750> - Suggest idea in website\n<#888054540623048725> - Development of Kumi web\n<#887327669451120681> - Update from github",
+      "color": 4312560
+    },
+    {
+      "title": "Product",
+      "description": "Information about product category\n\n<#887238307761770527> - Show Kumi product\n<#887238341035175956> - How to buy?\n<#887243007710068737> - Talk about product  feedback or other",
+      "color": 15745400
+    },
+    {
+      "title": "Verify",
+      "description": "Go to <#884402231007408128> to verify first to get permission to talk",
+      "color": 15745345
+    }
+  ]
+}
