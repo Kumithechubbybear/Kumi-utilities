@@ -15,9 +15,7 @@ module.exports = (client) => {
             } else {
                 message.delete();
             }       
-        } else {
-            message.delete();
-        }     
+        }  
     })
 
 }
