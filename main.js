@@ -22,7 +22,7 @@ const mod = require('./command/mod')
 const helpm = require('./command/modhelp')
 const poli = require('./command/political')
 const product = require('./command/product')
-const ping = require('./command/pingrole')
+//const ping = require('./command/pingrole')
 const verify = require('./command/verify')
 
 client.on('ready', () => {
@@ -78,7 +78,7 @@ client.on('ready', () => {
   helpm(client)
   poli(client)
   product(client)
-  ping(client)
+  //ping(client)
   verify(client)
 });
 
