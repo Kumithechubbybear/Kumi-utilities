@@ -8,7 +8,7 @@ module.exports = (client) => {
                 message.delete();
                 let verify = message.guild.roles.cache.find(
                   role => role.name === 'verify'
-              );
+                );
           
                   message.member.roles.add(verify);
                 message.author.send('You are **verify**, Congrats.')
