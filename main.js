@@ -23,6 +23,7 @@ const helpm = require('./command/modhelp')
 const poli = require('./command/political')
 const product = require('./command/product')
 const ping = require('./command/pingrole')
+const verify = require('./command/verify')
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -78,6 +79,7 @@ client.on('ready', () => {
   poli(client)
   product(client)
   ping(client)
+  verify(client)
 });
 
 client.login(process.env.DISCORD_TOKEN);
