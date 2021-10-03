@@ -24,6 +24,7 @@ const poli = require('./command/political')
 const product = require('./command/product')
 //const ping = require('./command/pingrole')
 const verify = require('./command/verify')
+const link = require('./command/link')
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -80,6 +81,7 @@ client.on('ready', () => {
   product(client)
   //ping(client)
   verify(client)
+  link(client)
 });
 
 client.login(process.env.DISCORD_TOKEN);
