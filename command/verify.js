@@ -15,6 +15,8 @@ module.exports = (client) => {
             } else {
                 message.delete();
             }       
+        } else if(message.channel.id === '884402231007408128') {
+            message.delete();
         }  
     })
 
