@@ -25,6 +25,7 @@ const product = require('./command/product')
 //const ping = require('./command/pingrole')
 const verify = require('./command/verify')
 const link = require('./command/link')
+const buy = require('./command/buy')
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -82,6 +83,7 @@ client.on('ready', () => {
   //ping(client)
   verify(client)
   link(client)
+  buy(client)
 });
 
 client.login(process.env.DISCORD_TOKEN);
