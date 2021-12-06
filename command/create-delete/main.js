@@ -1,7 +1,5 @@
 require('dotenv').config();
 const prefix = process.env.PREFIX;
-const command = require('../command') 
-const { Permissions } = require('discord.js');
 
 module.exports = (client) => {
   client.on('message',(message) => {
