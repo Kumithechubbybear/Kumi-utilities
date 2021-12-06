@@ -26,6 +26,7 @@ const product = require('./command/product')
 const verify = require('./command/verify')
 const link = require('./command/link')
 const buy = require('./command/buy')
+const ticket = require('./command/ticket/main')
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -84,6 +85,7 @@ client.on('ready', () => {
   verify(client)
   link(client)
   buy(client)
+  ticket(client)
 });
 
 client.login(process.env.DISCORD_TOKEN);
